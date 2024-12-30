@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Privacy Policy Specific Styles */
+
+      .privacy-policy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: var(--container-pad);
+        min-height: 100vh;
+      }
+
+      .privacy-policy .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        max-width: 800px;
+        background-color: var(--dark-clr);
+        padding: var(--p-md);
+        border-radius: var(--section-rad);
+      }
+
+      .privacy-policy .col-text {
+        text-align: center;
+      }
+
+      .privacy-policy .col-text h1 {
+        color: var(--primar-clr);
+        font-size: 2.5rem;
+        margin-bottom: var(--m-md);
+        text-indent: -20px;
+      }
+
+      .privacy-policy .col-text .sub-heading {
+        font-size: var(--font-nr);
+        color: var(--primar-clr-light);
+        margin-bottom: var(--m-md);
+      }
+
+      .privacy-policy .col-content h2 {
+        color: var(--primar-clr);
+        font-size: var(--font-md);
+        margin-top: var(--m-md);
+      }
+
+      .privacy-policy .col-content p {
+        font-size: var(--font-nr);
+        color: var(--primar-clr-light);
+        margin-top: var(--m-sm);
+        line-height: 1.6;
+      }
+
+      .privacy-policy .btn {
+        align-self: center;
+        width: 160px;
+        padding: var(--p-md);
+        border: none;
+        border-radius: var(--btn-radius);
+        background-image: var(--gra-primary);
+        color: var(--dark-clr);
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: var(--transition-one);
+      }
+
+      .privacy-policy .btn:hover {
+        background-image: var(--gra-white);
+        transform: scale(1.1);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .privacy-policy .wrapper {
+          padding: var(--p-sm);
+        }
+
+        .privacy-policy .col-text h1 {
+          font-size: 2rem;
+        }
+
+        .privacy-policy .col-content h2 {
+          font-size: var(--font-nr);
+        }
+      }
+    </style>
+    <title>Shoe Hives</title>
+    <style></style>
+  </head>
+
+  <body>
+    <!--Privacy Policy-->
+    <section class="privacy-policy container">
+      <div class="clr-one"></div>
+      <div class="clr-two"></div>
+      <div class="wrapper">
+        <div class="col col-text">
+          <h1 class="heading-one">Privacy Policy</h1>
+          <br /><br /><br />
+          <p class="sub-heading">
+            Your privacy is important to us. This policy outlines how we
+            collect, use, and protect your information.
+          </p>
+        </div>
+        <div class="col col-content">
+          <h2 class="heading-two">Information We Collect</h2>
+          <p>
+            We collect personal information such as your name, email, and
+            shipping address when you place an order or sign up for our
+            newsletter.
+          </p>
+
+          <h2 class="heading-two">How We Use Your Information</h2>
+          <p>
+            We use your information to process orders, improve your shopping
+            experience, and communicate updates about our products.
+          </p>
+
+          <h2 class="heading-two">Protecting Your Data</h2>
+          <p>
+            We implement secure technology to safeguard your data. Rest assured,
+            your privacy is our priority.
+          </p>
+
+          <h2 class="heading-two">Changes to This Policy</h2>
+          <p>
+            We may update our privacy policy periodically. Please review this
+            page regularly to stay informed.
+          </p>
+          <br /><br />
+         <a href="index.html"> <button class="btn">Back to Home</button></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

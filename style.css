@@ -1,0 +1,537 @@
+/* Importing Montserrat font */
+
+/* ================== Universal Styles ============= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+/* ================== Variables ============= */
+:root {
+    --p-xm: 4px;
+    --p-sm: 10px 14px;
+    --p-md: 12px 16px;
+    --p-lg: 16px 24px;
+    --container-pad: 60px 40px;
+    --section-heading-pad: 44px 40px;
+
+    --m-xm: 4px 0;
+    --m-sm: 8px 0;
+    --m-md: 12px 0;
+    --m-t-b: 10px 0;
+    --m-t-b-md: 20px 0;
+
+    --primar-clr: rgb(66, 61, 61);
+    --primar-clr-light: #555;
+    --first-gra-clr: white;
+    --second-gra-clr: #f818d2;
+    --dark-clr: #f8f8f8;
+    --light-bg: #fdfdfd;
+
+    --gra-white: linear-gradient(45deg, skyblue, blue);
+    --gra-primary: linear-gradient(45deg, rgb(129, 68, 68), rgb(175, 134, 134));
+
+    --font-sm: .8rem;
+    --font-nr: 1rem;
+    --font-md: 1.2rem;
+
+    --border-radius-full: 50%;
+    --section-rad: 12px;
+    --btn-radius: 4px;
+    --card-rad: 8px;
+
+    --transition-one: all .25s ease;
+    --transition-two: all .50s linear;
+}
+
+/* ================== Custom Styles ============= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primar-clr);
+    font-weight: 700;
+}
+
+p {
+    color: var(--primar-clr-light);
+    size: 100px;
+}
+.logo p{
+    font-size: px;
+    font-weight: bold;
+}
+body {
+    background-color: var(--dark-clr);
+    color: var(--primar-clr);
+    transition: background-color 0.5s ease;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primar-clr-light);
+    border-radius: 60px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: var(--gra-primary);
+    border-radius: 20px;
+}
+
+/* ================== Universal Classes ============= */
+.customer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: var(--container-pad);
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    width: 1280px;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    padding: var(--section-heading-pad);
+    z-index: 100;
+}
+
+.section-heading .sub-heading {
+    color: var(--primar-clr-light);
+}
+#heading-one{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: var(--primar-clr);
+}
+
+.heading-two {
+    font-size: 2.8rem;
+    text-transform: capitalize;
+}
+
+.heading-three {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+
+
+.btn {
+    border: none;
+    outline: none;
+    background-image: var(--gra-primary);
+    color: var(--primar-clr);
+    border-radius: var(--btn-radius);
+    padding: var(--p-sm);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: var(--transition-one);
+    font-size: var(--font-nr);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: var(--gra-white);
+    color: var(--dark-clr);
+    transform: scale(1.1);
+}
+
+.col-text {
+    align-self: self-start;
+    padding-top: 100px;
+}
+
+.col-img {
+    flex: 1.8;
+}
+
+.col-img .hero-img-off {
+    width: 260px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: #fff;
+    word-break: break-all;
+    line-height: 1.8;
+    border-radius: var(--card-rad);
+    position: absolute;
+    bottom: 160px;
+    left: 400px;
+}
+
+.col-img .hero-img-off p {
+    font-size: var(--font-sm);
+    color: var(--primar-clr-light);
+}
+
+.col-img .hero-img-off h3 {
+    color: var(--primar-clr);
+}
+
+.hero button {
+    margin: var(--m-t-b-md);
+    width: 200px;
+    height: 44px;
+    border-radius: 30px;
+}
+
+.arrival .col {
+    border-radius: var(--card-rad);
+    padding: var(--p-sm);
+}
+
+.arrival .col figure {
+    border-radius: var(--btn-radius);
+    background-color: var(--light-bg);
+}
+
+.col-body {
+    padding: .5rem;
+    width: 100%;
+}
+
+.col-body .rating-icon {
+    font-size: var(--font-sm);
+}
+
+.col .rating-icon .fa-star {
+    color: #ffd700;
+}
+
+.col-body .sub-heading {
+    font-size: var(--font-sm);
+    color: var(--primar-clr-light);
+}
+
+.col-body .col-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--m-sm);
+}
+
+.col-body .col-footer button {
+    width: 100px;
+    height: 36px;
+    font-size: var(--font-sm);
+}
+
+.about .wrapper {
+    z-index: 100;
+}
+
+.about .col-text .sub-heading {
+    color: var(--primar-clr-light);
+}
+
+.about .col-text .about-text {
+    font-size: .9rem;
+    margin: var(--m-md);
+}
+
+.about .col-text .btn {
+    width: 120px;
+    height: 40px;
+    font-size: var(--font-sm);
+    margin: var(--m-t-b);
+}
+
+.get-off {
+    width: 180px;
+    padding: var(--p-sm);
+    background-color: var(--light-bg);
+    border-radius: var(--btn-radius);
+    backdrop-filter: blur(10px);
+    bottom: 0;
+    position: absolute;
+    left: 0;
+}
+
+.get-off p {
+    word-break: break-all;
+    font-size: .7rem;
+}
+
+/* ================== Customer Review Section ============= */
+.testimonial .sub-heading {
+    color: var(--first-gra-clr);
+    font-weight: bold;
+}
+
+.testimonial .wrapper {
+    gap: 30px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.testimonial figure {
+    width: 80px;
+}
+
+.testimonial .col {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 1.2rem 1.4rem;
+    border-radius: var(--btn-radius);
+    background-color: var(--light-bg);
+    backdrop-filter: blur(10px);
+    z-index: 200;
+}
+
+.testimonial .col p {
+    font-size: var(--font-sm);
+    word-break: break-all;
+}
+
+.testimonial .col h3 {
+    color: var(--primar-clr-light);
+}
+
+.testimonial .fa-star {
+    color: #ffd700;
+    margin-right: 4px;
+}
+    /* ================== Contact Page Specific Styles ============= */
+
+/* Contact Page Container */
+.heading-one {
+    text-indent: 250px;
+}
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--container-pad);
+    min-height: 100vh;
+}
+
+.contact-page .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    background-color: var(--dark-clr);
+    padding: var(--p-md);
+    border-radius: var(--section-rad);
+}
+
+/* Heading Styling */
+.contact-page .col-text h1 {
+    color: var(--primar-clr);
+    font-size: 2.5rem;
+    margin-bottom: var(--m-md);
+}
+
+/* Contact Form Styling */
+.contact-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.contact-page .contact-form label {
+    font-size: var(--font-md);
+    color: var(--primar-clr-light);
+    margin-bottom: var(--m-xm);
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+    width: 100%;
+    padding: var(--p-md);
+    border: 1px solid var(--primar-clr-light);
+    border-radius: var(--btn-radius);
+    font-size: var(--font-nr);
+    background-color: var(--dark-clr);
+    color: var(--primar-clr);
+    transition: var(--transition-one);
+}
+
+.contact-page .contact-form input:focus,
+.contact-page .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--second-gra-clr);
+    box-shadow: 0 0 5px rgba(248, 24, 210, 0.5);
+}
+
+.contact-page .contact-form button {
+    width: 100%;
+    max-width: 200px;
+    padding: var(--p-md);
+    border: none;
+    border-radius: var(--btn-radius);
+    background-image: var(--gra-primary);
+    color: var(--dark-clr);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition-one);
+}
+
+.contact-page .contact-form button:hover {
+    background-image: var(--gra-white);
+    transform: scale(1.1);
+}
+/* ================== Background Color Change on Scroll ============= */
+body.scrolled {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* ================== Responsive Styles ============= */
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+        gap: 15px;
+    }
+
+    .section-heading {
+        width: 100%;
+        padding: var(--p-md);
+    }
+
+    .heading-two {
+        font-size: 2.4rem;
+    }
+
+    .heading-three {
+        font-size: 1.2rem;
+    }
+
+    .col-text {
+        padding-top: 50px;
+    }
+
+    .col-img .hero-img-off {
+        width: 200px;
+        bottom: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--p-sm);
+    }
+
+    .heading-two {
+        font-size: 2rem;
+    }
+
+    .col {
+        flex: none;
+        width: 100%;
+    }
+
+    .col-img .hero-img-off {
+        width: 180px;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact-page .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-one {
+        font-size: 2.5rem;
+        text-indent: 0;
+        text-align: center;
+    }
+
+    .heading-two {
+        font-size: 1.8rem;
+    }
+
+    .heading-three {
+        font-size: 1rem;
+    }
+
+    .col-img .hero-img-off {
+        width: 160px;
+        padding: var(--p-sm);
+    }
+
+    .contact-page .wrapper {
+        padding: var(--p-sm);
+    }
+
+    .contact-page .contact-form button {
+        max-width: 100%;
+    }
+
+    .testimonial figure {
+        width: 60px;
+    }
+}

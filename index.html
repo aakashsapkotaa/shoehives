@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+      </style>
+    <title>Shoe Hives</title>
+    <style></style>
+  </head>
+
+  <body>
+    <!--Header Section-->
+    <header class="header">
+      <div class="hontainer">
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          ☰
+        </button>
+
+        <a href="index.html" class="logo">
+          <p>SHOE HIVES</p>
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            ✖
+          </button>
+          <a href="kidsproduct.html" class="navbar-link">Kids</a>
+          <a href="menproduct.html" class="navbar-link">Men</a>
+          <a href="femaleproduct.html" class="navbar-link">Women</a>
+          <a href="#About" class="navbar-link">About</a>
+          <a href="#Contact" class="navbar-link">Contact</a>
+        </nav>
+
+        <div class="header-action">
+          <button class="header-action-btn" aria-label="add to cart">
+            <ion-icon name="cart-outline"></ion-icon>
+          </button>
+          <button class="profile-btn" aria-label="profile">
+            <img src="./asses/testimonail/ano.png" alt="Profile" />
+            <button class="dark-mode-toggle" style="background: none; border: none; font-size: 20px;" aria-label="Toggle Dark Mode" onclick="toggleDarkMode()">DM</button>
+          </button>
+        </div>
+
+        <div class="overlay" data-overlay></div>
+      </div>
+    </header>
+    <br /><br />
+    <script>
+        function toggleDarkMode() {
+          document.body.classList.toggle('dark-mode');
+        }
+      </script>
+    <!--Main Section-->
+    <main class="contaier hero">
+      <div class="clr-one"></div>
+      <div class="clr-two"></div>
+      <div class="wrapper">
+        <div class="col col-text" data-aos="fade-right">
+          <h1 id="heading-one">
+            Best in Style <br />
+            Collection <br />
+            <span>for You</span>
+          </h1>
+          <p class="sub-text">
+            Crafted with passion and precision, <br />
+            celebrating over 70 years of innovation in the industry.
+          </p>
+          <a href="#Contact"><button class="btn btn-hero">Pre-Order Now</button></a>
+        </div>
+        <div class="col col-img">
+          <figure data-aos="fade-left">
+            <img src="./asses/hero/hero.png" alt="Nike Shoe" />
+          </figure>
+          <div class="hero-img-off" data-aos="zoom-in-up">
+            <h3 class="heading-three">Get Up to 50% OFF</h3>
+            <p>
+              Discover unbeatable discounts on premium collections. Upgrade your
+              style today!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br /><br />
+    <!-- ====================  About Us section ================== -->
+    <section class="about container" id="About">
+      <div class="clr-one"></div>
+      <div class="clr-two"></div>
+      <div class="wrapper">
+        <div class="col-img col">
+          <div class="get-off" data-aos="zoom-in">
+            <h4>get up to 50% OFF</h4>
+            <p class="off-text">Its quality is very good</p>
+          </div>
+          <figure data-aos="fade-left">
+            <img src="./asses/about/about-img.png" alt="about-img" />
+          </figure>
+        </div>
+        <div class="col-text col" data-aos="fade-right">
+          <p class="sub-heading">about us</p>
+          <h2 class="heading-two">
+            we provide high <br />
+            quality <span> shoes</span>
+          </h2>
+          <p class="about-text">Best Best Best</p>
+          <a href="about.html"><button class="btn">read more</button></a>
+          <button class="btn" onclick="history.back()">Go Back</button></a>
+        </div>
+      </div>
+    </section>
+    <!-- customer review -->
+    <section class="testimonial">
+      <div class="clr-one"></div>
+      <div class="section-heading">
+        <div class="heading">
+          <p class="sub-heading">testimonial</p>
+          <h2 class="heading-two" style="text-indent: 270px">
+            what our customer says
+          </h2>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="col" data-aos="zoom-in-up">
+          <figure>
+            <img src="./asses/testimonail/ano.png" alt="Ram Bahadur's photo" />
+          </figure>
+          <h3 class="heading-three">Ram Bahadur</h3>
+          <p class="testi-message">
+            I stumbled upon this shoe website and decided to give it a try. Wow,
+            was I impressed! The quality of the shoes exceeded my expectations,
+            and the customer service was outstanding. I'll definitely be a
+            repeat customer!"
+          </p>
+       
+        </div>
+
+        <div class="col" data-aos="zoom-in-up">
+          <figure>
+            <img src="./asses/testimonail/ano.png" alt="Shyam Kumar's photo" />
+          </figure>
+          <h3 class="heading-three">Shyam Kumar</h3>
+          <p class="testi-message">
+            I've been searching for the perfect pair of shoes for months, and I
+            finally found them on this website. Not only are they stylish and
+            comfortable, but the ordering process was seamless
+          </p>
+       
+        </div>
+
+        <div class="col" data-aos="zoom-in-up">
+          <figure>
+            <img src="./asses/testimonail/ano.png" alt="Hari Prasad's photo" />
+          </figure>
+          <h3 class="heading-three">Hari Prasad</h3>
+          <p class="testi-message">
+            I'm not one to leave reviews often, but I had to for this website.
+            The variety of shoes available is fantastic, and the prices are
+            unbeatable. Plus, the shoes I ordered arrived in pristine condition
+            and fit perfectly."
+          </p>
+       
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+          <figure>
+            <img src="./asses/testimonail/ano.png" alt="Gita Devi's photo" />
+          </figure>
+          <h3 class="heading-three">Gita Devi</h3>
+          <p class="testi-message">
+            I'm not one to leave reviews often, but I had to for this website.
+            The variety of shoes available is fantastic, and the prices are
+            unbeatable. Plus, the shoes I ordered arrived in pristine condition
+            and fit perfectly."
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-page container" id="Contact">
+      <div class="clr-one"></div>
+      <div class="clr-two"></div>
+      <div class="wrapper">
+        <div class="col col-text" data-aos="fade-right">
+          <h1 class="heading-one">Any Quary</h1>
+        </div>
+        <div class="col col-form" data-aos="fade-left">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn" onclick="checkData()">
+              Send Message
+            </button>
+            <button onclick="history.back()">Go Back</button>
+            <!--Script for contact section-->
+            <script>
+              function checkData() {
+                var data = document.getElementById("message").value;
+                if (data) {
+                  alert("Thanks For Your Feedback");
+                } else {
+                  alert("Please fill out the message");
+                }
+              }
+            </script>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <br /><br />
+    <!--  Footer Section -->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_content">
+          <a href="#" class="footer_logo">SHOE HIVE</a>
+          <p class="footer_description">
+            Discover the best collection of premium shoes designed for every
+            occasion. Quality and style redefined.
+          </p>
+          <div>
+            <a href="#" class="footer_social"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="footer_social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer_social"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer_content">
+          <h3 class="footer_tt">Shop</h3>
+          <a href="menproduct.html" class="footer_link">Men's Shoes</a>
+          <a href="femaleproduct.html" class="footer_link">Women's Shoes</a>
+          <a href="kidsproduct.html" class="footer_link">Kids' Shoes</a>
+        </div>
+        <div class="footer_content">
+          <h3 class="footer_tt">Company</h3>
+          <a href="#" class="footer_link">About Us</a>
+          <a href="#" class="footer_link">Careers</a>
+          <a href="#" class="footer_link">Press</a>
+          <a href="#" class="footer_link">Sustainability</a>
+        </div>
+        <div class="footer_content">
+          <h3 class="footer_tt">Support</h3>
+          <a href="#" class="footer_link">Help Center</a>
+          <a href="#" class="footer_link">Returns</a>
+          <a href="#" class="footer_link">Shipping</a>
+          <a href="#" class="footer_link">FAQs</a>
+        </div>
+      </div>
+      <p class="footer_copy">
+        &#169; 2024 SHOE HIVE All Rights Reserved. |
+        <a href="privacypolicy.html">Privacy Policy</a>
+      </p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      // JavaScript
+      const navbar = document.querySelector("[data-navbar]");
+      const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+      const overlay = document.querySelector("[data-overlay]");
+
+      navTogglers.forEach((toggler) => {
+        toggler.addEventListener("click", () => {
+          navbar.classList.toggle("active");
+          overlay.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

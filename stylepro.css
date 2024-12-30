@@ -1,0 +1,137 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+*{
+  text-transform:uppercase;
+}
+.profile-btn .img { width: 30px; }
+
+
+img {
+  max-width: 100%;
+}
+
+.box {
+  max-width: 1824px;
+  margin: 0 auto;
+}
+
+.add-to-cart {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: rgba(52, 4, 4, 0.379);
+}
+
+/* New Arrivals */
+.h {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 600;
+}
+
+.h h1 {
+  font-weight: 400;
+}
+
+.h span {
+  color: #ff4321;
+}
+
+.ac-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.ac {
+  text-align: center;
+  padding-bottom: 16px;
+  transition: all 500ms ease-in-out;
+}
+
+.ac:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ac .img-cover {
+  overflow: hidden;
+}
+
+.ac img {
+  transition: all 500ms ease-in-out;
+}
+
+.ac:hover img {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 567px) {
+  .h {
+    font-size: 32px;
+  }
+}
+
+.ab {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 4vw);
+  gap: 2rem;
+}
+
+.ab .item {
+  overflow: hidden;
+}
+
+.ab img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 500ms ease-out;
+}
+
+.ab .item-1 img {
+  object-fit: fill;
+}
+
+.ab img:hover {
+  transform: scale(1.2);
+}
+
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+
+.item-2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+
+.item-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.item-4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
